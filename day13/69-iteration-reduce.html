@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+      // Dizi oluşturma
+let dizi = [2, 5, 12, -4, -5];
+ // Toplama işlemi için reduce fonksiyonunu kullanma
+let toplam = dizi.reduce((accumulator, currentValue) => {
+   // console.log(accumulator , currentValue)
+
+    return accumulator + currentValue;
+},0);// 0 degeri accumulatorun start degeri olur yazmak optional ama istenen işleme gore gerekli 
+ // Sonucu yazdırma
+console.log("Dizinin toplamı:", toplam);
+
+
+        const multiply = dizi.reduce( (t, n) => { 
+            //console.log(t,n);
+            return t * n;
+        } , 1 );
+        console.log("Dizinin carpımı:",multiply);
+
+
+    </script>
+    
+</body>
+</html>
