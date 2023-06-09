@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+  </head>
+  <body>
+    <h1 id="welcomeText">Welcome to my web</h1>
+
+    <article></article>
+    <p class="contact">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, accusamus
+      aliquid deserunt ducimus incidunt id nobis asperiores facilis officiis vel
+      explicabo tenetur maiores eos laborum iste doloremque repudiandae maxime
+      nemo? Iure atque in, non, vero error sapiente eveniet magnam at ipsa
+      dignissimos consequuntur quae corrupti et quos quod ratione fugiat velit
+      itaque, placeat illo beatae repudiandae amet suscipit quo! Impedit?
+    </p>
+
+    <script>
+        const welcomeTextEl =document.getElementById("welcomeText");
+        welcomeTextEl.innerText +=", eklenti" 
+        welcomeTextEl.innerHTML +=", html ile eklenti" 
+        // getElementsByTagName her zaman dizi doner cogul getirir
+        const articleEl=document.getElementsByTagName("article");
+        articleEl[0].innerText= "artıcle eklemesi"
+         //getElementsByClassName dizi doner
+        const contactEl =document.getElementsByClassName("contact");
+        contactEl[0].innerHTML ="class  edildi";
+
+
+
+    </script>
+  </body>
+</html>
